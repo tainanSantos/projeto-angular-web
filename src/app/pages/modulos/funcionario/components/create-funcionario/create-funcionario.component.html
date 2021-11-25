@@ -1,0 +1,48 @@
+<h1 class="h3 mb-0 text-gray-800" style="margin-bottom: 16px !important;">Novo Funcionário</h1>
+<div class="card shadow mb-4">
+  <div class="card-body">
+    <form class="row g-3 needs-validation" novalidate action="list.html">
+      <div class="col-md-12">
+        <label for="selectEmpresa">Selectione uma Empresa</label>
+        <select class="form-control" id="selectEmpresa" required>
+          <option selected disabled value="">Selecione</option>
+          <option value="1">Empresa 1</option>
+          <option value="2">Empresa 2</option>
+        </select>
+        <div class="invalid-feedback">
+          Campo Obrigatório
+        </div>
+      </div>
+      <div class="col-md-8">
+        <label for="inputNome" class="form-label">*Nome</label>
+        <input type="text" class="form-control" id="inputNome" required>
+        <div class="invalid-feedback">
+          Campo Obrigatório
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputCNPJ" class="form-label">CNPJ</label>
+        <input type="text" class="form-control" id="inputCNPJ" required>
+        <div class="invalid-feedback">
+          Campo Obrigatório
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="selectCargo">Selectione um Cargo</label>
+        <select class="form-control form-select" id="selectCargo" required>
+          <option selected disabled value="">Selecione</option>
+          <option value="1">Programador - R$: 1.000,00</option>
+          <option value="2">Analista - R$: 2.000,00</option>
+        </select>
+        <div class="invalid-feedback">
+          Campo Obrigatório
+        </div>
+      </div>
+
+      <div class="col-12" style="margin-top: 16px">
+        <button class="btn btn-primary" type="submit">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
