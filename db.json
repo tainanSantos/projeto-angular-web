@@ -1,0 +1,19 @@
+{
+  "empresas": [
+    {
+      "funcionarios": 10,
+      "gastos": 500,
+      "nome": "Tainan Santos",
+      "cnpj": "555.999.888-99",
+      "id": 1
+    },
+    {
+      "funcionarios": 10,
+      "gastos": 500,
+      "nome": "Tainan Santos 2",
+      "cnpj": "555.999.888-96",
+      "id": 2
+    }
+  ],
+  "funcionarios": []
+}

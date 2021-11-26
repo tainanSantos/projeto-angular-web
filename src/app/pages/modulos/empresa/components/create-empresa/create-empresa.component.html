@@ -1,24 +1,23 @@
 <h1 class="h3 mb-0 text-gray-800" style="margin-bottom: 16px !important;">Nova Empresa</h1>
 <div class="card shadow mb-4">
   <div class="card-body">
-    <form class="row g-3 needs-validation" novalidate>
+    <form [formGroup]="formulario" (ngSubmit)="salvarForm()" class="row g-3 " >
       <div class="col-md-8">
-        <label for="inputNome" class="form-label">*Nome</label>
-        <input type="text" class="form-control" id="inputNome" required>
-        <div class="invalid-feedback">
+        <label for="nome" class="form-label">*Nome</label>
+        <input type="text" class="form-control" formControlName="nome" id="nome" >
+        <!-- <div class="invalid-feedback">
           Campo Obrigatório
-        </div>
+        </div> -->
       </div>
       <div class="col-md-4">
-        <label for="inputCNPJ" class="form-label">CNPJ</label>
-        <input type="text" class="form-control" id="inputCNPJ" required>
-        <div class="invalid-feedback">
+        <label for="cnpj" class="form-label">CNPJ</label>
+        <input type="text" class="form-control" formControlName="cnpj" id="cnpj" >
+        <!-- <div class="invalid-feedback">
           Campo Obrigatório
-        </div>
+        </div> -->
       </div>
-
       <div class="col-12" style="margin-top: 16px">
-        <button class="btn btn-primary" type="submit">Salvar</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!formulario.valid">Salvar</button>
       </div>
     </form>
   </div>
